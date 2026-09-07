@@ -72,6 +72,8 @@ private bool isDragging = false;
         UpdateHotbarOpacity();
 
         UpdateItemDescription();
+
+        UseItem();
     }
 
     
@@ -336,5 +338,30 @@ private bool isDragging = false;
             }
         }
         itemDescriptionParent.SetActive(false);
+    }
+
+    private void UseItem()
+    {
+        if(!Input.GetKeyDown(KeyCode.Mouse0)) return;
+
+        Slot equippedSlot = hotBarSlots[equippedHotbarIndex];
+
+        if(!equippedSlot.HasItem()) return;
+
+        ItemSO itemSO = equippedSlot.GetItem();
+        GameObject prefab = itemSO.itemPrefab;
+
+        if(prefab == null) return;
+
+        if(equippedSlot.GetItem() == axeItem)
+        {
+            GameObject dropped = Instantiate(prefab, Camera.main.transform.position + Camera.main.transform.forward, Quaternion.identity);
+
+        Item item = dropped.GetComponent<Item>();
+        item.item = itemSO;
+        item.amount = equippedSlot.GetAmount();
+        }
+
+        
     }
 }
