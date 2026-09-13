@@ -114,13 +114,13 @@ Material:
     - _SrcBlend: 1
     - _SrcBlendAlpha: 1
     - _Surface: 0
-    - _VecularDensity: -29.4
-    - _VecularSpeed: 0.44
-    - _VecularThicness: 3.84
-    - _WaterDepth: 0.06
-    - _WaveAmplitude: 4.1
-    - _WaveFrequency: 10.6
-    - _WaveSpeed: 0.55
+    - _VecularDensity: 0
+    - _VecularSpeed: 0
+    - _VecularThicness: 10
+    - _WaterDepth: 0.6
+    - _WaveAmplitude: 0
+    - _WaveFrequency: 0
+    - _WaveSpeed: 0
     - _WorkflowMode: 1
     - _XRMotionVectorsPass: 1
     - _ZWrite: 1

@@ -257,20 +257,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "2c92adfe37cb4de7a3d3533a96e6fb91"
-                },
-                "m_SlotId": 2
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "3675f607ca9a443e9f002215dae3c03c"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "3675f607ca9a443e9f002215dae3c03c"
                 },
                 "m_SlotId": 3
@@ -425,20 +411,6 @@
         {
             "m_OutputSlot": {
                 "m_Node": {
-                    "m_Id": "bcc7dc7f4c884043a940bced2d4f5888"
-                },
-                "m_SlotId": 0
-            },
-            "m_InputSlot": {
-                "m_Node": {
-                    "m_Id": "2c92adfe37cb4de7a3d3533a96e6fb91"
-                },
-                "m_SlotId": 1
-            }
-        },
-        {
-            "m_OutputSlot": {
-                "m_Node": {
                     "m_Id": "c0af0d39c44645ea96db51d235c914bc"
                 },
                 "m_SlotId": 3
@@ -571,9 +543,9 @@
             },
             "m_InputSlot": {
                 "m_Node": {
-                    "m_Id": "2c92adfe37cb4de7a3d3533a96e6fb91"
+                    "m_Id": "3675f607ca9a443e9f002215dae3c03c"
                 },
-                "m_SlotId": 0
+                "m_SlotId": 1
             }
         },
         {
@@ -753,8 +725,8 @@
     "m_ObjectId": "0b9c9bbdf04e4005beb34d8ce8b74e80",
     "m_Title": "Depth",
     "m_Position": {
-        "x": -1469.5999755859375,
-        "y": -931.9999389648438
+        "x": -1469.0,
+        "y": -929.9999389648438
     }
 }
 
@@ -764,8 +736,8 @@
     "m_ObjectId": "0e3694a7efbe4c96a03a6c2a9d0ba4c7",
     "m_Title": "HeightBlend",
     "m_Position": {
-        "x": -1410.4000244140625,
-        "y": -55.20001220703125
+        "x": -1410.0,
+        "y": -52.99993896484375
     }
 }
 
@@ -1393,10 +1365,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -276.7999572753906,
-            "y": -593.5999145507813,
-            "width": 208.00003051757813,
-            "height": 301.59991455078125
+            "x": -306.0,
+            "y": -505.9999694824219,
+            "width": 208.0,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -2748,8 +2720,8 @@
     "m_ObjectId": "75f161da2aaf41de986c1a25cc2d3e7c",
     "m_Title": "TerrainColor",
     "m_Position": {
-        "x": -1491.2003173828125,
-        "y": -555.2000732421875
+        "x": -1491.0,
+        "y": -552.9998779296875
     }
 }
 
