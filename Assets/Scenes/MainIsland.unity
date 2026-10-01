@@ -6386,6 +6386,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::PauseMenu
   pauseMenu: {fileID: 923987582}
+  inventory: {fileID: 315242928}
 --- !u!1 &1614529222
 GameObject:
   m_ObjectHideFlags: 0
