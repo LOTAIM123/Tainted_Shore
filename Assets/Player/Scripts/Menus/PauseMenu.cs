@@ -10,17 +10,16 @@ public class PauseMenu : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.G) && inventory.activeInHierarchy == true)
         {
             inventory.SetActive(false);
-            Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = !Cursor.visible;
-            Player_camera.Instance.updatingRotation = !Player_camera.Instance.updatingRotation;
+
+            LockUnlockMouse();
         }
         else if (Input.GetKeyDown(KeyCode.G))
         {
             inventory.SetActive(false);
             pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
-            Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
-            Cursor.visible = !Cursor.visible;
-            Player_camera.Instance.updatingRotation = !Player_camera.Instance.updatingRotation;
+
+            LockUnlockMouse();
+
             if(pauseMenu.activeInHierarchy)
             {
                 PauseGame();
@@ -41,6 +40,12 @@ public class PauseMenu : MonoBehaviour
     private void ContinueGame()
     {
         Time.timeScale = 1;
+    }
 
+    private void LockUnlockMouse()
+    {
+        Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
+        Cursor.visible = !Cursor.visible;
+        Player_camera.Instance.updatingRotation = !Player_camera.Instance.updatingRotation;
     }
 }
