@@ -3,6 +3,7 @@ using UnityEngine;
 public class ButtonFunctions : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject settingsMenu;
 
     
 
@@ -18,6 +19,8 @@ public class ButtonFunctions : MonoBehaviour
 
     public void OpenSettings()
     {
-        //i mke later :D
+        pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
+        settingsMenu.SetActive(!settingsMenu.activeInHierarchy);
+        //complete latera :D
     }
 }
