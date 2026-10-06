@@ -5,7 +5,9 @@ public class PauseMenu : MonoBehaviour
     public GameObject pauser;
     public GameObject pauseMenu;
     public GameObject inventory;
+
     public GameObject settingsMenu;
+    public GameObject keybindMenu;
 
     void Update()
     {   
@@ -17,7 +19,7 @@ public class PauseMenu : MonoBehaviour
         }
         else if (Input.GetKeyDown(KeyCode.G) && settingsMenu.activeInHierarchy == true)
         {
-            settingsMenu.SetActive(false);
+            CloseAllMenus();
             pauseMenu.SetActive(true);
 
 
@@ -57,5 +59,11 @@ public class PauseMenu : MonoBehaviour
         Cursor.lockState = Cursor.lockState == CursorLockMode.Locked ? CursorLockMode.None : CursorLockMode.Locked;
         Cursor.visible = !Cursor.visible;
         Player_camera.Instance.updatingRotation = !Player_camera.Instance.updatingRotation;
+    }
+
+    private void CloseAllMenus()
+    {
+        keybindMenu.SetActive(false);
+        settingsMenu.SetActive(false);
     }
 }

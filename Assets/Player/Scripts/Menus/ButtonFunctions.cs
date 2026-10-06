@@ -1,14 +1,17 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class ButtonFunctions : MonoBehaviour
 {
     public GameObject pauser;
     public GameObject pauseMenu;
+
     public GameObject settingsMenu;
+    public GameObject keybindMenu;
 
     
 
-    public void CloseMenu()
+    public void OpenPauseMenu()
     {
         pauser.SetActive(!pauser.activeInHierarchy);
         pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
@@ -20,7 +23,19 @@ public class ButtonFunctions : MonoBehaviour
 
     public void OpenSettings()
     {
+        CloseAllMenus();
         pauseMenu.SetActive(!pauseMenu.activeInHierarchy);
         settingsMenu.SetActive(!settingsMenu.activeInHierarchy);
+    }
+
+    public void CloseAllMenus()
+    {
+        keybindMenu.SetActive(false);
+    }
+
+    public void OpenKeybinds()
+    {
+        CloseAllMenus();
+        keybindMenu.SetActive(true);
     }
 }
