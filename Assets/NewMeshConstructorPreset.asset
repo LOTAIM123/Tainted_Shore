@@ -1,0 +1,165 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 18d025b309e0c2e4897a403ecf04ae05, type: 3}
+  m_Name: NewMeshConstructorPreset
+  m_EditorClassIdentifier: Veridian.MeshConstructor.Editor::Veridian.Perspective.Constructor.Editor.MeshConstructorPreset
+  ActiveStrategyType: 0
+  clusteringSettings:
+    minRadius: 0
+    maxRadius: 5
+    densityCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 0
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    maxAttempts: 50
+    minSeparation: 1
+  circleSettings:
+    plantSpacing: 1.5
+    randomDisplacement: 0.2
+    radialJitter: 0.2
+    orientationMode: 0
+    gapProbability: 0.05
+    circle1:
+      enabled: 1
+      radius: 10
+      startAngle: 0
+      endAngle: 360
+    circle2:
+      enabled: 0
+      radius: 15
+      startAngle: 0
+      endAngle: 360
+    circle3:
+      enabled: 0
+      radius: 20
+      startAngle: 0
+      endAngle: 360
+  cropSettings:
+    rowCount: 10
+    rowLength: 50
+    plantSpacing: 2.5
+    rowSpacing: 3
+    randomDisplacement: 0.2
+    staggeredHexGridMode: 1
+    missingPlantProbability: 0.05
+    rowsBetweenPaths: 4
+    pathWidth: 2
+  fractalSettings:
+    minBranches: 2
+    maxBranches: 4
+    branchAngle: 45
+    branchScale: 0.8
+    branchOffset: 2
+    useRandomYRotation: 1
+    gravityBendBias: {x: 15, y: 0, z: 0}
+  hedgeSettings:
+    hedgeWidth: 20
+    hedgeLength: 30
+    plantSpacing: 1
+    positionJitter: 0.2
+    cornerClusteringDensity: 3
+    entranceWidth: 2
+    entranceCenter: 0.5
+    addSouthEntrance: 1
+    addNorthEntrance: 0
+    addWestEntrance: 0
+    addEastEntrance: 0
+  shapeFillSettings:
+    shapeToFill: 0
+    minSeparation: 1
+    maxPlacementAttempts: 100
+    outerRadius: 10
+    innerRadius: 0
+    startAngle: 0
+    endAngle: 360
+    rectWidth: 20
+    rectLength: 20
+    innerHoleScale: 0
+    triangleBase: 20
+    triangleHeight: 20
+    hexagonRadius: 10
+  spiralSettings:
+    pointCount: 200
+    divergenceAngle: 137.5
+    radiusStep: 1
+    radiusExpansionCurve:
+      serializedVersion: 2
+      m_Curve:
+      - serializedVersion: 3
+        time: 0
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    randomDisplacement: 0.05
+  poissonDiscSettings:
+    boundingArea: {x: 50, y: 50}
+    minDistance: 2
+    maxRejectionAttempts: 30
+  splinePathSettings:
+    controlPoints:
+    - {x: -20, y: 0, z: 0}
+    - {x: 0, y: 0, z: 10}
+    - {x: 20, y: 0, z: -10}
+    spacing: 2
+    jitter: 0.5
+    alignRotationToPath: 1
+  customName: 
+  verticalDisplacement: 0
+  isGrassMode: 0
+  forceReadableMeshes: 1
+  bakePivotInVertexColor: 0
+  EnableLODCrossfade: 0
+  ModeOverride: 0
+  ImposterGenerationMode: 0
+  MinImposterRenderDistance: 0.01
+  CustomTransitions: []
+  cullPercentage: 0.1
+  enableHLODMode: 0
+  skipFusedLOD0: 0
+  colliderMode: 0
+  capsuleColliderRadius: 1
