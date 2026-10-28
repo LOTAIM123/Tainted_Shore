@@ -193,6 +193,7 @@ GameObject:
   - component: {fileID: 8036415306234724855}
   - component: {fileID: 3511339147884261999}
   - component: {fileID: 8161332882721680983}
+  - component: {fileID: -6285273125915717036}
   m_Layer: 0
   m_Name: Fir
   m_TagString: Untagged
@@ -264,3 +265,16 @@ CapsuleCollider:
   m_Height: 5.23
   m_Direction: 1
   m_Center: {x: 0, y: 2.41, z: 0}
+--- !u!114 &-6285273125915717036
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7263397490992503629}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: aedaf93bc4cc0b247a96a34188829e95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::TreeChopping
+  drop: {fileID: 3104210581561868141, guid: 2c53e81f535e75746a61d3455593d54e, type: 3}
