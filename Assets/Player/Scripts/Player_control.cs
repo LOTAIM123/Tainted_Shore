@@ -34,6 +34,8 @@ public class Player_control : MonoBehaviour
     Vector3 moveDirection;
     Rigidbody rb;
 
+    public AudioSource walkingAudio;
+
     private void Start()
     {
         rb = GetComponent<Rigidbody>();
@@ -66,7 +68,6 @@ public class Player_control : MonoBehaviour
         moveDirection = orientation.forward * VerticalInput + orientation.right * horizontalInput;
         if(grounded)
             rb.AddForce(moveDirection.normalized * MoveSpeed * 10f, ForceMode.Force);
-
         else if(!grounded)
             rb.AddForce(moveDirection.normalized * walkSpeed * 10f * airMultiplier, ForceMode.Force);
     }
